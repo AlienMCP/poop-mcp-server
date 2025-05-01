@@ -1,0 +1,4 @@
+coingecko:
+  api:
+    key: ${COINGECKO.KEY}
+    url: https://api.coingecko.com

@@ -1,0 +1,10 @@
+spring:
+  ai:
+    mcp:
+      server:
+        name: poop-mcp-server
+        version: 0.0.1
+  profiles:
+    active: @profile.name@'
+server:
+  port: 8888
