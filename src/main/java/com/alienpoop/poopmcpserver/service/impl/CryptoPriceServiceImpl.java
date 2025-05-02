@@ -23,7 +23,7 @@ public class CryptoPriceServiceImpl implements ICryptoPriceService {
   @Tool(
       name = "fetchCryptoPrice",
       description =
-          "查询指定代币的当前价格、市场总值、24小时交易量和24小时变化。参数 'coin' 应为代币的完整名称（例如 'moss'、'bitcoin'），直接从用户输入中提取，不进行拼写校正或截断。")
+          "Queries the current price, market capitalization, 24-hour trading volume, and 24-hour change of a specified cryptocurrency. The 'coin' parameter should be the full name of the cryptocurrency (e.g., 'moss', 'bitcoin'), extracted directly from user input without spelling correction or truncation.")
   public String fetchCryptoPrice(String coin) {
     String body =
         HttpRequest.get(api + "/api/v3/coins/markets")
