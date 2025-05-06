@@ -23,7 +23,7 @@ public class CryptoPriceServiceImpl implements ICryptoPriceService {
   @Tool(
       name = "fetchCryptoPrice",
       description =
-          "Queries the current price, market capitalization, 24-hour trading volume, and 24-hour change of a specified cryptocurrency. The 'coin' parameter should be the full name of the cryptocurrency (e.g., 'moss', 'bitcoin'), extracted directly from user input without spelling correction or truncation.")
+          "Queries the current price, market capitalization, 24-hour trading volume, and 24-hour change of a specified cryptocurrency. The ‘coin’ parameter should be the official full name of the cryptocurrency (e.g., ‘moss’, ‘bitcoin’) and should be extracted directly from user input. If the user provides a name in Chinese (e.g., “比特币”) or an abbreviation, it should be translated or mapped to the corresponding official English name, such as ‘bitcoin’ or the appropriate token name.")
   public String fetchCryptoPrice(String coin) {
     String body =
         HttpRequest.get(api + "/api/v3/coins/markets")

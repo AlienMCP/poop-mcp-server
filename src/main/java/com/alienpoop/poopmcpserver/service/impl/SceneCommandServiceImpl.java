@@ -16,15 +16,15 @@ public class SceneCommandServiceImpl implements I3DSceneCommandService {
       name = "processMoveCommand",
       description =
           "1. Parse the move command parameters from user input (e.g., \"move forward 500 meters\"):\n"
-              + "   - command: Fixed to \"move\" (recognize \"move\" or \"walk\").\n"
-              + "   - target: Map to \"front\" (forward), \"back\" (backward), \"left\" (left), \"right\" (right).\n"
-              + "   - distance: Extract the number (integer or decimal, e.g., 500).\n"
-              + "2. Call processMoveCommand(command, target, distance).\n"
-              + "3. Directly return the raw output of processMoveCommand (the compact JSON string from jsonObject.toString() or an error message), e.g., {\"command\":\"move\",\"target\":\"front\",\"distance\":500} or \"Invalid distance, must be a positive number.\".\n"
-              + "4. Must adhere to the following rules:\n"
-              + "   - Do not add any wrapping, such as \"content\" field, </think> tags, ```json markers, or other metadata.\n"
-              + "   - Do not format the JSON string; keep it compact (no newlines or indentation).\n"
-              + "   - Do not translate, rephrase, or modify the output in any way.\n"
+              + "   - command: Fixed to \\\"move\\\" (recognize \\\"move\\\" or \\\"walk\\\").\\n\"\n"
+              + "              + \"   - target: Map to \\\"front\\\" (forward), \\\"back\\\" (backward), \\\"left\\\" (left), \\\"right\\\" (right).\\n\"\n"
+              + "              + \"   - distance: Extract the number (integer or decimal, e.g., 500).\\n\"\n"
+              + "              + \"2. Call processMoveCommand(command, target, distance).\\n\"\n"
+              + "              + \"3. Directly return the raw output of processMoveCommand (the compact JSON string from jsonObject.toString() or an error message), e.g., {\\\"command\\\":\\\"move\\\",\\\"target\\\":\\\"front\\\",\\\"distance\\\":500} or \\\"Invalid distance, must be a positive number.\\\".\\n\"\n"
+              + "              + \"4. Must adhere to the following rules:\\n\"\n"
+              + "              + \"   - Do not add any wrapping, such as \\\"content\\\" field, </think> tags, ```json markers, or other metadata.\\n\"\n"
+              + "              + \"   - Do not format the JSON string; keep it compact (no newlines or indentation).\\n\"\n"
+              + "              + \"   - Do not translate, rephrase, or modify the output in any way.\n"
               + "   - The output must be identical to the string returned by the function, containing only the JSON string or error message.")
   public String processMoveCommand(String command, String target, BigDecimal distance) {
     // Validate input parameters
