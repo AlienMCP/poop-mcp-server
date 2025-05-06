@@ -10,6 +10,6 @@ WORKDIR /data
 
 EXPOSE 8888
 
-ADD ./target/jeecg-module-mgn-start.jar ./
+ADD ./target/oop-mcp-server-0.0.1-SNAPSHOT.jar ./
 
-CMD sleep 1;java $JAVA_OPTS  -Dfile.encoding=utf-8 -Djava.security.egd=file:/dev/./urandom -jar jeecg-module-mgn-start.jar
+CMD sleep 1;java $JAVA_OPTS  -Dfile.encoding=utf-8 -Djava.security.egd=file:/dev/./urandom -jar oop-mcp-server-0.0.1-SNAPSHOT.jar
