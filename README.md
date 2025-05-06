@@ -1,4 +1,4 @@
-# Poop MCP Server
+    # Poop MCP Server
 
 A Spring Boot application that provides an MCP (Model Control Protocol) server for AI tools. This server enables AI models to interact with external services through a standardized protocol.
 
@@ -21,7 +21,7 @@ A Spring Boot application that provides an MCP (Model Control Protocol) server f
 ### Clone the Repository
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/AlienMCP/poop-mcp-server.git
 cd poop-mcp-server
 ```
 
@@ -138,6 +138,3 @@ Returns a JSON string with the cryptocurrency price details or an error message.
 
 This server is designed to work with Spring AI's tool framework. Services are annotated with `@ToolServer` and methods with `@Tool` to make them available as tools for AI models.
 
-## License
-
-[Include license information here]
