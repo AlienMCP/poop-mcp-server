@@ -1,6 +1,6 @@
     # Poop MCP Server
 
-A Spring Boot application that provides an MCP (Model Control Protocol) server for AI tools. This server enables AI models to interact with external services through a standardized protocol.
+Poop MCP Server provides an MCP (Model Control Protocol) server for AI tools. This server enables AI models to interact with external services through a standardized protocol.
 
 ## Features
 
