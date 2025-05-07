@@ -1,16 +1,9 @@
 package com.alienpoop.poopmcpserver.service;
 
-import java.math.BigDecimal;
+import java.util.List;
+import java.util.Map;
 
 public interface I3DSceneCommandService {
 
-
-  String processMoveCommand(String command,String target, BigDecimal distance);
-
-
-
-
-
-
-
+  String parseCommand(String text, Map<String, String> timeRange, String location);
 }
